@@ -1,5 +1,5 @@
 # README - java-simplecalc-spring-boot
-Java Simple Calculator - Command Line
+Java Simple Calculator - Spring Boot
 
 ## 1. Introduction
 
@@ -34,15 +34,48 @@ Consulte todos detalhes da [estratégia de branches e workflow](https://github.c
 
 ### 3.1. Preconditions
 
+* Eclipse configured `JRE System Library[JSE1.8]`
+
+```eclipse
++ JRE System Library -> click properties
+  + Execution environment: JavaSE-1.8(jre1.8.09) -> click environment
+    - Move JavaSE-1.8 from list "Execution Environment" to "Compatible Environment"
+```
+
+* `pom.xml` configuration:
+
+```pom.xml
+  :
+	<properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+  :
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.21.RELEASE</version>
+	</parent>
+  :
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+  :
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+  :
+```
+
 * Java JDK 1.8 (jar file includes runnable)
-* Espring-bootpse (version Neon recommended)
 * Apache Maven 3.6 (recommended > 3.3)
-* Spring Boot `pom.xml` configuration:
-  1. Spring Boot Starter Parent
-  2. Spring Boot Starter Web
-  3. Java Version 8
-  4. Spring Boot Plugin
-  5. Create Spring Boot Application Loader
 
 
 ### 3.2. Guide for Developers
@@ -85,6 +118,9 @@ C:\..\java-simplecalc-spring-boot> mvn clean compile package assembly:single
 
 
 ## I - References
+
+* [Introduction to Spring Boot ](https://www.youtube.com/watch?v=R9qanO4c7bY&list=PLzS3AYzXBoj8UcLsBN3UXd7Nf1T4ZyJa0)
+* [Spring Boot Hello World Example in Eclipse](https://www.youtube.com/watch?v=Bro59wWFOgo&t=331s)
 
 * [spring-boot-starter-parent correct version](https://stackoverflow.com/questions/41032446/springbootapplication-cannot-be-resolved-to-a-type)
 * https://help.espring-bootpse.org/neon/index.jsp?topic=%2Forg.espring-bootpse.stardust.docs.wst%2Fhtml%2Fwst-integration%2Fconfiguration.html

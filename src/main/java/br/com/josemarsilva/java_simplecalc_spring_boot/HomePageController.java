@@ -5,13 +5,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class WelcomeController {
+public class HomePageController {
 
 	//Auto wiring
 	@Autowired
-	private WelcomeService service;
-
-	@RequestMapping("/welcome")
+	private HomePageService service;
+	
+	@RequestMapping("/")
 	public String welcome() {
 		return service.retrieveWelcomeMessage();
 	}

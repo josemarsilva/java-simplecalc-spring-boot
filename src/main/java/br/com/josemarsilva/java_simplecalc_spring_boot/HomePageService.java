@@ -24,7 +24,7 @@ public class HomePageService {
 				"Welcome to Java Simple Calc Spring Boot ! It's already " + strDate + "</body></html>" +
 				"<br>" +
 				"<ul>\r\n" + 
-				"<li><a href=/simpleCalc>Expression Calculator</a></li>\r\n" + 
+				"<li><a href=/simpleCalc>Calcular Expressão</a></li>\r\n" + 
 				"</ul>" +
 				"</body>\r\n" + 
 				"</html>";

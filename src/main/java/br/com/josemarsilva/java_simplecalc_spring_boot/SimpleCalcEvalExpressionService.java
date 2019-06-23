@@ -14,8 +14,8 @@ public class SimpleCalcEvalExpressionService {
 				"<body>\r\n" +
 				"<h1>Java Simple Calc Spring Boot</h1>" +
 				"<ul>\r\n" + 
-				"<li>Expressão: <code>" + "expressão" + "</code></li>\r\n" + 
-				"<li>Resultado: <code>" + "resultado" + "</code></li>\r\n" + 
+				"<li>Expressão: <code>" + "1 + 1" + "</code></li>\r\n" + 
+				"<li>Resultado: <code>" + "2" + "</code></li>\r\n" + 
 				"</ul>" +
 				"<br>" +
 				"<a href=/simpleCalc>voltar</a>\r\n" + 

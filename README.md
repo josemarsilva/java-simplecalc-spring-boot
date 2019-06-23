@@ -92,10 +92,7 @@ Consulte todos detalhes da [estratégia de branches e workflow](https://github.c
 
 ### 3.4. Guide for Test
 
-The following command line runs JUnit tests.
-
-```bat
-```
+* n/a
 
 
 ### 3.5. Guide for Deploy
@@ -103,13 +100,29 @@ The following command line runs JUnit tests.
 The following command line builds a runnable (.jar) in `.\target\java-simplecalc-spring-boot-jar-with-dependencies.jar`
 
 ```bat
-C:\..\java-simplecalc-spring-boot> mvn clean compile package assembly:single
+C:\..\java-simplecalc-spring-boot> mvn clean package
+C:\..\java-simplecalc-spring-boot> java -jar .\target\java-simplecalc-spring-boot-0.0.1-SNAPSHOT.jar
 ```
 
+```console
+ :
+2019-06-23 00:51:39.870  INFO 10948 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-06-23 00:51:39.886  INFO 10948 --- [           main] b.c.j.j.Application                      : Started Application in 5.106 seconds (JVM running for 6.025)
+```
 
 ### 3.6. Guide for Demonstration
 
-* n/a
+* Passo 1: Entre na página principal da aplicação e clique na opção de `Calcular Expresssão`
+
+![demo-webapp-01.png](./doc/demo-webapp-01.png)
+
+* Passo 2: Informe uma expressão, por exemplo "1 + 1" e clique no botão `submit` para executar o cálculo:
+
+![demo-webapp-02.png](./doc/demo-webapp-02.png)
+
+* Passo 3: Observe o resultado do cálculo mostrado pelo sistema:
+
+![demo-webapp-03.png](./doc/demo-webapp-03.png)
 
 
 ### 3.7. Patterns, Standard, Conventions and Best Practices

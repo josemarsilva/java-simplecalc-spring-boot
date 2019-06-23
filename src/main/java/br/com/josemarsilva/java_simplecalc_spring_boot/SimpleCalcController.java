@@ -5,15 +5,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HomePageController {
+public class SimpleCalcController {
 
 	//Auto wiring
 	@Autowired
-	private HomePageService homePageservice;
+	private SimpleCalcService simpleCalcService;
 	
-	@RequestMapping("/")
+	@RequestMapping("/simpleCalc")
 	public String welcome() {
-		return homePageservice.retrieveWelcomeMessage();
+		return simpleCalcService.retrieveSimpleCalc();
 	}
 
 }

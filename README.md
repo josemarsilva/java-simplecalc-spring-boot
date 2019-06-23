@@ -124,3 +124,15 @@ C:\..\java-simplecalc-spring-boot> mvn clean compile package assembly:single
 
 * [spring-boot-starter-parent correct version](https://stackoverflow.com/questions/41032446/springbootapplication-cannot-be-resolved-to-a-type)
 * https://help.espring-bootpse.org/neon/index.jsp?topic=%2Forg.espring-bootpse.stardust.docs.wst%2Fhtml%2Fwst-integration%2Fconfiguration.html
+
+
+* https://www.youtube.com/watch?v=Bro59wWFOgo&t=331s
+* https://www.youtube.com/watch?v=PSP1-2cN7vM&list=PLBBog2r6uMCRzaJqr-uUC8gakwSxkPSBh
+  - https://github.com/in28minutes/SpringBootForBeginners/tree/master/01.Spring-Boot-Introduction-In-10-Steps
+  - https://github.com/in28minutes/SpringBootForBeginners/blob/master/Step01.md
+  - https://github.com/in28minutes/SpringBootForBeginners/blob/master/Step02.md
+  - https://github.com/in28minutes/SpringBootForBeginners/blob/master/Step03.md
+* https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/
+* http://www.springboottutorial.com/spring-boot-tutorials-for-beginners
+* https://www.youtube.com/watch?v=ILRmPKEL4U0&index=1&list=PLBBog2r6uMCRzaJqr-uUC8gakwSxkPSBh
+* http://www.springboottutorial.com/creating-rest-service-with-spring-boot
